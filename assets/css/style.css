@@ -40,7 +40,8 @@ section {
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -52,6 +53,11 @@ section {
   justify-content: space-between;
   background: url("../img/promo-img.png") 50% 110px no-repeat;
   background-size: cover;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-main {
@@ -229,7 +235,7 @@ section {
 }
 
 .features-box {
-  width: 446px;
+  max-width: 446px;
   padding-left: 90px;
   display: inline-block;
 }
@@ -316,9 +322,8 @@ section {
 }
 
 .photo-client {
-  width: 370px;
-  float: left;
   margin-left: 20px;
+  float: left;
   background-color: #e8bf5d;
 }
 
@@ -479,7 +484,7 @@ section {
 
 /* =====================contact======================= */
 .contact-box {
-  width: 870px;
+  max-width: 870px;
   padding: 50px;
   margin: 0 auto;
   display: flex;
@@ -529,7 +534,7 @@ section {
   background-color: #e8bf5d;
 }
 
-.map-box img {
+.map-box iframe {
   position: relative;
   top: -20px;
   left: 20px;
