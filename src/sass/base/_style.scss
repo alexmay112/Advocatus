@@ -355,22 +355,35 @@ section {
 
 .quote {
     margin-bottom: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-up(md) {
+      flex-wrap: nowrap;
+    }
 }
 
 .photo-client {
-    margin-left: 20px;
-    float: left;
-    background-color: #e8bf5d;
+    // margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+    display: inline-table;
+    background-color: transparent;
+      @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      background-color: #e8bf5d;
+    }
 }
 
 .photo-client img {
+  position: static;
+  @include media-breakpoint-up(md) {
     position: relative;
     top: -20px;
     left: -20px;
+  }
 }
 
 .clients-quote {
-    float: right;
     text-align: left;
 }
 
