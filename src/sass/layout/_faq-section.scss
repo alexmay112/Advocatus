@@ -1,0 +1,43 @@
+.faq {
+    background-color: #111;
+}
+
+.faq .section-header h2 {
+    color: #fff;
+}
+
+.faq .section-header p {
+    color: #b9b9b9;
+}
+
+.faq-answer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.faq-list {
+    margin-bottom: 40px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+    }
+    li {
+        border-bottom: 3px solid $main-accent-color;
+    }
+}
+.faq-list a {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    color: #fff;
+    font-family: $open-sans-font;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.faq-list a.active {
+    color: $main-accent-color;
+}
+
+.faq-list a.active i {
+    color: #fff;
+}

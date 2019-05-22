@@ -1,0 +1,98 @@
+.our-clients {
+    color: #fff;
+    background: url("../img/our-clients-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.our-clients .container {
+    text-align: center;
+}
+
+.our-clients .section-header h2 {
+    color: #fff;
+    text-align: left;
+}
+
+.our-clients .section-header p {
+    color: #b9b9b9;
+    text-align: left;
+}
+
+.quote {
+    margin-bottom: 27px;
+    outline: none;
+    @include media-breakpoint-up(md) {
+        flex-wrap: nowrap;
+    }
+}
+
+.photo-client {
+    margin-bottom: 30px;
+    padding: 0;
+    float: left;
+    background-color: transparent;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+        background-color: $main-accent-color;
+    }
+}
+
+.photo-client img {
+    margin: auto;
+    position: static;
+    @include media-breakpoint-up(md) {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+.clients-quote {
+    float: right;
+    text-align: left;
+}
+
+.clients-quote blockquote {
+    margin: 0 0 40px;
+    font-size: 14px;
+    font-family: $open-sans-font;
+    line-height: 31px;
+}
+
+.clients-quote h3 {
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.clients-quote span {
+    font-size: 14px;
+    font-family: $open-sans-font;
+}
+
+.slide {
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.slide i {
+    display: block;
+}
+
+.slide a {
+    color: #fff;
+}
+
+.slide.active {
+    background-color: #fff;
+}
+
+.slick-dots li button::before {
+    font-size: 20px;
+    color: #665858;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #ffffff;
+    opacity: 1;
+}

@@ -1,0 +1,40 @@
+input {
+    border: none;
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}

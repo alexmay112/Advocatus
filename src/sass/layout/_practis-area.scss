@@ -1,0 +1,75 @@
+.practis-area {
+    color: #fff;
+    background-color: #111;
+}
+
+.practis-area .section-header h2 {
+    color: #fff;
+}
+
+.practis-area .section-header p {
+    color: #b9b9b9;
+}
+
+.features {
+    text-align: center;
+}
+
+.features-box {
+    max-width: 446px;
+    padding-top: 90px;
+    display: inline-block;
+    @include media-breakpoint-up(md) {
+        padding-left: 90px;
+        padding-top: 0;
+    }
+}
+
+.features .private-feature {
+    background: url("../img/hands-icon.png") 50% 35px no-repeat;
+    @include media-breakpoint-up(md) {
+        background-position: 20px 0;
+    }
+}
+
+.features .labour-feature {
+    background: url("../img/tools-icon.png") 50% 35px no-repeat;
+    @include media-breakpoint-up(md) {
+        background-position: 20px 0;
+    }
+}
+
+.features .cyber-feature {
+    background: url("../img/screen-icon.png") 50% 35px no-repeat;
+    @include media-breakpoint-up(md) {
+        background-position: 20px 0;
+    }
+}
+
+.features .real-feature {
+    background: url("../img/build-icon.png") 50% 35px no-repeat;
+    @include media-breakpoint-up(md) {
+        background-position: 20px 0;
+    }
+}
+
+.features-box h3 {
+    font-size: 21px;
+    margin-bottom: 32px;
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+}
+
+.features-box:nth-child(2) h3 {
+    text-transform: uppercase;
+}
+
+.features-box p {
+    font-family: $open-sans-font;
+    font-size: 14px;
+    line-height: 25px;
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+}

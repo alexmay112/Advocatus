@@ -1,0 +1,51 @@
+.publications-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.publications-item {
+    max-width: 350px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $main-accent-color;
+}
+
+.publications-item h3 {
+    margin: 30px 0 10px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.by-mark,
+.date {
+    font-style: italic;
+    color: #666;
+    font-family: $open-sans-font;
+}
+
+.author-name {
+    font-family: $open-sans-font;
+}
+
+.date {
+    float: right;
+}
+
+.publications-item p {
+    margin-top: 38px;
+    color: #666;
+    line-height: 31px;
+}
+
+.widgets {
+    font-family: $open-sans-font;
+}
+
+.share-box {
+    float: right;
+}
+
+.widgets a {
+    color: #111;
+}

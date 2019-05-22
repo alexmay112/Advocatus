@@ -1,0 +1,33 @@
+footer {
+    min-height: 81px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #111;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    color: #b5b5b5;
+}
+
+.symu {
+    font-family: $open-sans-font;
+}
+
+.social-icon {
+    display: flex;
+    a {
+        margin-left: 20px;
+    }
+}

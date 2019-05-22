@@ -1,11 +1,21 @@
 @import "bootstrap";
 
-@import 'utils/variables';
 @import 'utils/mixins';
+@import 'utils/variables';
+
+@import 'base/basic';
+@import 'base/typography';
+
+@import 'layout/promo-section';
+@import 'layout/about-us';
+@import 'layout/practis-area';
+@import 'layout/attorney-section';
+@import 'layout/our-clients';
+@import 'layout/recent-publications';
+@import 'layout/faq-section';
+@import 'layout/contact-section';
+@import 'layout/footer';
 
 @import 'components/slick-theme';
 @import 'components/slick';
 @import 'components/accordion';
-
-@import 'base/style';
-@import 'base/typography';

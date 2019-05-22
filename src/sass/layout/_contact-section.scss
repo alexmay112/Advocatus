@@ -1,0 +1,66 @@
+.contact-box {
+    max-width: 870px;
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    box-shadow: 0 12px 40px rgba(104, 86, 42, 0.1);
+}
+
+.contact-box form {
+    width: 350px;
+}
+
+.contact-box form input,
+.contact-box form textarea {
+    width: 100%;
+    padding: 9px 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #b9b9b9;
+    font-family: $open-sans-font;
+    font-size: 14px;
+    color: #b9b9b9;
+    font-style: italic;
+}
+
+.contact-box form textarea {
+    min-height: 90px;
+    border: none;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.contact-box form input[type="submit"] {
+    width: auto;
+    padding: 17px 30px;
+    margin: 0;
+    display: block;
+    color: #111;
+    font-family: $playfair-font;
+    font-size: 16px;
+    border: none;
+    background-color: $main-accent-color;
+    border-radius: 50px;
+    font-style: normal;
+}
+
+.map-box {
+    padding: 0;
+    background-color: $main-accent-color;
+    margin-top: 40px;
+    @include media-breakpoint-up(md) {
+        margin-top: 0;
+    }
+}
+
+.map-box iframe {
+    min-height: 370px;
+    height: 100%;
+    position: static;
+    @include media-breakpoint-up(md) {
+        position: relative;
+        top: -20px;
+        left: 20px;
+    }
+}
