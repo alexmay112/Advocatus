@@ -54,11 +54,11 @@ section {
     background: url("../img/promo-img.png") 50% 110px no-repeat;
     background-size: cover;
     .container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    } 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .header-main {
@@ -98,8 +98,9 @@ section {
 }
 
 .bg-promo {
+    width: 100%;
     max-width: 968px;
-    margin-bottom: 140px;
+    margin: 0 auto 140px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -175,7 +176,6 @@ section {
 }
 
 .history {
-    // width: 50%;
     padding-right: 20px;
     float: left;
     color: #111;
@@ -205,8 +205,6 @@ section {
 }
 
 .expertise {
-    // width: 50%;
-    // float: right;
     font-size: 14px;
     color: #666666;
     line-height: 31px;
@@ -245,36 +243,36 @@ section {
     padding-top: 90px;
     display: inline-block;
     @include media-breakpoint-up(md) {
-      padding-left: 90px;
-      padding-top: 0;
+        padding-left: 90px;
+        padding-top: 0;
     }
 }
 
 .features .private-feature {
     background: url("../img/hands-icon.png") 50% 35px no-repeat;
     @include media-breakpoint-up(md) {
-      background-position: 20px 0;
+        background-position: 20px 0;
     }
 }
 
 .features .labour-feature {
     background: url("../img/tools-icon.png") 50% 35px no-repeat;
     @include media-breakpoint-up(md) {
-      background-position: 20px 0;
+        background-position: 20px 0;
     }
 }
 
 .features .cyber-feature {
     background: url("../img/screen-icon.png") 50% 35px no-repeat;
     @include media-breakpoint-up(md) {
-      background-position: 20px 0;
+        background-position: 20px 0;
     }
 }
 
 .features .real-feature {
     background: url("../img/build-icon.png") 50% 35px no-repeat;
     @include media-breakpoint-up(md) {
-      background-position: 20px 0;
+        background-position: 20px 0;
     }
 }
 
@@ -282,7 +280,7 @@ section {
     font-size: 21px;
     margin-bottom: 32px;
     @include media-breakpoint-up(md) {
-      text-align: left;
+        text-align: left;
     }
 }
 
@@ -295,7 +293,7 @@ section {
     font-size: 14px;
     line-height: 25px;
     @include media-breakpoint-up(md) {
-      text-align: left;
+        text-align: left;
     }
 }
 
@@ -306,9 +304,6 @@ section {
     flex-wrap: wrap;
     li {
         margin-bottom: 40px;
-        &:last-child {
-            // margin-bottom: 0;
-        }
     }
 }
 
@@ -319,7 +314,7 @@ section {
 .attorney-team img {
     margin-bottom: 5px;
     @include media-breakpoint-up(md) {
-      margin-bottom: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -332,7 +327,7 @@ section {
     color: #666;
 }
 
-/* ===================our-clients================== */
+/* ===================Our-clients================== */
 .our-clients {
     color: #fff;
     background: url("../img/our-clients-bg.png") no-repeat;
@@ -355,36 +350,39 @@ section {
 
 .quote {
     margin-bottom: 27px;
-    display: flex;
-    flex-wrap: wrap;
+    outline: none;
     @include media-breakpoint-up(md) {
-      flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
 }
 
 .photo-client {
-    // margin-left: 20px;
     margin-bottom: 30px;
     padding: 0;
-    display: inline-table;
+    float: left;
     background-color: transparent;
-      @include media-breakpoint-up(md) {
-      margin-bottom: 0;
-      background-color: #e8bf5d;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+        background-color: #e8bf5d;
     }
 }
 
 .photo-client img {
-  position: static;
-  @include media-breakpoint-up(md) {
-    position: relative;
-    top: -20px;
-    left: -20px;
-  }
+    margin: auto;
+    position: static;
+    @include media-breakpoint-up(md) {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
 }
 
 .clients-quote {
+    float: right;
     text-align: left;
+    @include media-breakpoint-up(md) {
+        padding-left: 40px;
+    }
 }
 
 .clients-quote blockquote {
@@ -421,7 +419,18 @@ section {
     background-color: #fff;
 }
 
-/* ===================recent-publications=================== */
+.slick-dots li button::before {
+    font-size: 20px;
+    color: #665858;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #ffffff;
+    opacity: 1;
+}
+
+/* ===================Recent-publications=================== */
 .publications-list {
     display: flex;
     justify-content: space-around;
