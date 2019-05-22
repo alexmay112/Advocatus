@@ -380,9 +380,6 @@ section {
 .clients-quote {
     float: right;
     text-align: left;
-    @include media-breakpoint-up(md) {
-        padding-left: 40px;
-    }
 }
 
 .clients-quote blockquote {
