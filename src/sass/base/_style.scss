@@ -8,6 +8,7 @@ div {
 }
 
 img {
+    width: 100%;
     max-width: 100%;
     display: inline-block;
 }
@@ -37,13 +38,18 @@ li {
     list-style: none;
 }
 
-/* =====================Promo=========================== */
 body {
     font-family: "Playfair Display", "Times New Roman", serif;
 }
 
+/* =====================Promo=========================== */
 section {
     padding: 100px 0;
+}
+
+header {
+    min-height: 100px;
+    background-color: #fff;
 }
 
 .promo {
@@ -52,50 +58,54 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url("../img/promo-img.png") 50% 110px no-repeat;
+    background: url("../img/promo-img.png") 50% 100px no-repeat;
     background-size: cover;
+
     .container {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        background-color: #fff;
     }
 }
 
-.header-main {
-    display: flex;
-    justify-content: space-between;
+.navbar {
+    padding: 0;
 }
 
-.logo-main {
-    float: left;
-}
-
-.logo-main h1 {
-    line-height: 110px;
-}
-
-.nav-main {
-    float: right;
-}
-
-.nav-main li {
-    float: left;
+.navbar-nav .nav-item {
     margin-left: 20px;
 }
 
-.nav-main li a {
-    padding: 14px 11px;
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: right;
+}
+
+.nav-item .nav-link {
     font-size: 14px;
     text-transform: uppercase;
     border-bottom: 5px solid transparent;
-    line-height: 110px;
     color: #111;
     font-family: "Open Sans", Arial, sans-serif;
+
+    &:hover {
+        border-bottom: 5px solid $main-accent-color;
+    }
 }
 
-.nav-main li a:hover {
-    border-bottom: 5px solid #e8bf5d;
+.navbar-light .navbar-toggler {
+    outline: none;
+}
+
+.logo-main {
+    width: 176px;
+    h1 {
+        line-height: 100px;
+    }
 }
 
 .bg-promo {
@@ -110,7 +120,7 @@ section {
 
 .promo-title {
     padding-left: 16px;
-    border-left: 2px solid #e8bf5d;
+    border-left: 2px solid $main-accent-color;
 }
 
 .bg-promo h2 {
@@ -130,7 +140,7 @@ section {
     display: inline-block;
     font-size: 16px;
     color: #111;
-    background-color: #e8bf5d;
+    background-color: $main-accent-color;
     border-radius: 50px;
 }
 
@@ -144,7 +154,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    border-left: 2px solid #e8bf5d;
+    border-left: 2px solid $main-accent-color;
     z-index: 0;
 }
 
@@ -364,7 +374,7 @@ section {
     background-color: transparent;
     @include media-breakpoint-up(md) {
         margin-bottom: 0;
-        background-color: #e8bf5d;
+        background-color: $main-accent-color;
     }
 }
 
@@ -439,7 +449,7 @@ section {
     max-width: 350px;
     margin-bottom: 40px;
     padding-bottom: 30px;
-    border-bottom: 2px solid #e8bf5d;
+    border-bottom: 2px solid $main-accent-color;
 }
 
 .publications-item h3 {
@@ -505,7 +515,7 @@ section {
         margin-bottom: 0;
     }
     li {
-        border-bottom: 3px solid #e8bf5d;
+        border-bottom: 3px solid $main-accent-color;
     }
 }
 .faq-list a {
@@ -519,24 +529,11 @@ section {
 }
 
 .faq-list a.active {
-    color: #e8bf5d;
+    color: $main-accent-color;
 }
 
 .faq-list a.active i {
     color: #fff;
-}
-
-.answer-box {
-    padding: 42px;
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 31px;
-    border-radius: 3px;
-    background-color: #e8bf5d;
-}
-
-.answer-box p {
-    margin: 0;
 }
 
 /* =====================Contact======================= */
@@ -582,14 +579,14 @@ section {
     font-family: "Playfair Display", "Times New Roman", serif;
     font-size: 16px;
     border: none;
-    background-color: #e8bf5d;
+    background-color: $main-accent-color;
     border-radius: 50px;
     font-style: normal;
 }
 
 .map-box {
     padding: 0;
-    background-color: #e8bf5d;
+    background-color: $main-accent-color;
     margin-top: 40px;
     @include media-breakpoint-up(md) {
         margin-top: 0;
