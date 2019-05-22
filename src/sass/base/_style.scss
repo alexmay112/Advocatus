@@ -39,7 +39,7 @@ li {
 }
 
 body {
-    font-family: "Playfair Display", "Times New Roman", serif;
+    font-family: $playfair-font;
 }
 
 /* =====================Promo=========================== */
@@ -62,14 +62,15 @@ header {
     background-size: cover;
 
     .container {
-        height: 100%;
+        // height: 100%;
         display: flex;
-        flex-direction: column;
-        background-color: #fff;
+        // flex-direction: column;
+        // background-color: #fff;
     }
 }
 
 .navbar {
+    width: 100%;
     padding: 0;
 }
 
@@ -90,7 +91,7 @@ header {
     text-transform: uppercase;
     border-bottom: 5px solid transparent;
     color: #111;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
 
     &:hover {
         border-bottom: 5px solid $main-accent-color;
@@ -111,37 +112,43 @@ header {
 .bg-promo {
     width: 100%;
     max-width: 968px;
-    margin: 0 auto 140px;
+    margin: 0 auto 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.promo-title {
-    padding-left: 16px;
-    border-left: 2px solid $main-accent-color;
-}
-
-.bg-promo h2 {
-    font-size: 65px;
-    color: #fff;
-    font-weight: 400;
-}
-
-.bg-promo span {
-    font-size: 31px;
-    color: #fff;
-    font-family: "Open Sans", Arial, sans-serif;
+    .promo-title {
+        padding-left: 16px;
+        border-left: 2px solid $main-accent-color;
+    }
+    h2 {
+        font-size: 65px;
+        color: #fff;
+        font-weight: 400;
+    }
+    span {
+        font-size: 31px;
+        color: #fff;
+        font-family: $open-sans-font;
+    }
+    @include media-breakpoint-up(md) {
+        margin: 0 auto 140px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .promo-btn {
+    margin-top: 50px;
     padding: 19px 46px;
     display: inline-block;
     font-size: 16px;
     color: #111;
     background-color: $main-accent-color;
     border-radius: 50px;
+    @include media-breakpoint-up(md) {
+        margin-top: 0;
+    }
 }
 
 /* =================AboutUs======================== */
@@ -163,7 +170,7 @@ header {
     left: 0;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
     font-size: 195px;
     color: #f0f0f0;
     font-style: normal;
@@ -207,12 +214,12 @@ header {
     display: inline-block;
     width: 80px;
     margin-right: 48px;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
     font-weight: 700;
 }
 
 .history-box p {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
 }
 
 .expertise {
@@ -228,7 +235,7 @@ header {
 }
 
 .expertise p {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
 }
 
 /* ======================Practis-area===================== */
@@ -300,7 +307,7 @@ header {
 }
 
 .features-box p {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
     font-size: 14px;
     line-height: 25px;
     @include media-breakpoint-up(md) {
@@ -334,7 +341,7 @@ header {
 }
 
 .attorney-team span {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
     color: #666;
 }
 
@@ -396,7 +403,7 @@ header {
 .clients-quote blockquote {
     margin: 0 0 40px;
     font-size: 14px;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
     line-height: 31px;
 }
 
@@ -407,7 +414,7 @@ header {
 
 .clients-quote span {
     font-size: 14px;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
 }
 
 .slide {
@@ -462,11 +469,11 @@ header {
 .date {
     font-style: italic;
     color: #666;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
 }
 
 .author-name {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
 }
 
 .date {
@@ -480,7 +487,7 @@ header {
 }
 
 .widgets {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
 }
 
 .share-box {
@@ -523,7 +530,7 @@ header {
     justify-content: space-between;
     padding: 16px 0;
     color: #fff;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
     font-size: 14px;
     font-weight: 700;
 }
@@ -558,7 +565,7 @@ header {
     padding: 9px 0;
     margin-bottom: 25px;
     border-bottom: 1px solid #b9b9b9;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
     font-size: 14px;
     color: #b9b9b9;
     font-style: italic;
@@ -576,7 +583,7 @@ header {
     margin: 0;
     display: block;
     color: #111;
-    font-family: "Playfair Display", "Times New Roman", serif;
+    font-family: $playfair-font;
     font-size: 16px;
     border: none;
     background-color: $main-accent-color;
@@ -629,7 +636,7 @@ footer .container {
 }
 
 .symu {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: $open-sans-font;
 }
 
 .social-icon {
