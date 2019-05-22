@@ -85,14 +85,3 @@
 .slide.active {
     background-color: #fff;
 }
-
-.slick-dots li button::before {
-    font-size: 20px;
-    color: #665858;
-    opacity: 1;
-}
-
-.slick-dots li.slick-active button::before {
-    color: #ffffff;
-    opacity: 1;
-}

@@ -6,6 +6,12 @@
 @import 'base/basic';
 @import 'base/typography';
 
+@import 'vendors/slick-theme';
+@import 'vendors/slick';
+
+@import 'components/accordion';
+@import 'components/slick-slider';
+
 @import 'layout/promo-section';
 @import 'layout/about-us';
 @import 'layout/practis-area';
@@ -15,7 +21,3 @@
 @import 'layout/faq-section';
 @import 'layout/contact-section';
 @import 'layout/footer';
-
-@import 'components/slick-theme';
-@import 'components/slick';
-@import 'components/accordion';
