@@ -66,29 +66,41 @@ header {
 }
 
 .bg-promo {
+    display: block;
     width: 100%;
     max-width: 968px;
     margin: 0 auto 40px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
 
     .promo-title {
         padding-left: 16px;
         border-left: 2px solid $main-accent-color;
+        text-align: left;
     }
 
     h2 {
-        font-size: 65px;
+        font-size: 24px;
         color: #fff;
         font-weight: 400;
+        @include media-breakpoint-up(md) {
+            font-size: 65px;
+        }
     }
 
     span {
-        font-size: 31px;
+        font-size: 16px;
         color: #fff;
         font-family: $open-sans-font;
+        @include media-breakpoint-up(md) {
+            font-size: 31px;
+        }
     }
     @include media-breakpoint-up(md) {
         margin: 0 auto 140px;
