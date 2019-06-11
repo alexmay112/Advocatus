@@ -34,7 +34,7 @@
 .contact-box form input[type="submit"] {
     width: auto;
     padding: 17px 30px;
-    margin: 0;
+    margin: 0 auto;
     display: block;
     color: #111;
     font-family: $playfair-font;
@@ -43,6 +43,9 @@
     background-color: $main-accent-color;
     border-radius: 50px;
     font-style: normal;
+    @include media-breakpoint-up(md) {
+        margin: 0;
+    }
 }
 
 .map-box {
